@@ -70,7 +70,7 @@ img.bg {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 120px 32px 32px;
+    padding: 120px 400px 50px 50px;
 }
 
 #nameSet,
