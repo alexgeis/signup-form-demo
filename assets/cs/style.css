@@ -1,0 +1,21 @@
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --primary-dark: #000;
+    --primary-light: #fff;
+    --secondary-light: #d9d9d9;
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    font-family: 'Didot', serif;
+    /* footer support */
+    margin-bottom: 100px;
+  }
