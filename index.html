@@ -5,17 +5,26 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sign-up Form</title>
+		<link rel="stylesheet" href="./assets/cs/style.css" />
 	</head>
 	<body>
 		<div class="wrapper">
 			<aside class="aside">
-				<img src="" alt="" class="bg" />
+				<img
+					src="./assets/images/ray-zhuang-kL3u4Tqfn1s-unsplash.jpg"
+					alt="neon glow in a Japanese back alley"
+					class="bg"
+				/>
 				<div class="text-bg">
-					<img src="" alt="" class="logo" />
-					<h1 class="company-name"></h1>
+					<img
+						src="./assets/images/pinpng.com-pink-circle-png-2191781.png"
+						alt="pink circle outline logo"
+						class="logo"
+					/>
+					<h1 class="company-name">Example Company Name</h1>
 				</div>
 			</aside>
-			<main>
+			<main class="main">
 				<h2>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
 					quis minus temporibus numquam odio. Minima molestiae reiciendis
@@ -25,28 +34,36 @@
 
 				<form action="POST">
 					<h2>Let's do this!</h2>
-					<label for="firstName">First Name</label>
-					<input type="text" name="firstName" id="firstName" />
+					<fieldset id="nameSet">
+						<label for="firstName">First Name</label>
+						<input type="text" name="firstName" id="firstName" />
 
-					<label for="lastName">Last Name</label>
-					<input type="text" name="lastName" id="lastName" />
+						<label for="lastName">Last Name</label>
+						<input type="text" name="lastName" id="lastName" />
+					</fieldset>
+					<fieldset id="emailPhoneSet">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" />
 
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email" />
+						<label for="phoneNumber">Phone Number</label>
+						<input type="tel" name="phoneNumber" id="phoneNumber" />
+					</fieldset>
+					<fieldset id="passwordSet">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" />
 
-					<label for="phoneNumber">Phone Number</label>
-					<input type="tel" name="phoneNumber" id="phoneNumber" />
-
-					<label for="password">Password</label>
-					<input type="password" name="password" id="password" />
-
-					<label for="confirmPassword">Confirm Password</label>
-					<input type="password" name="confirmPassword" id="confirmPassword" />
+						<label for="confirmPassword">Confirm Password</label>
+						<input
+							type="password"
+							name="confirmPassword"
+							id="confirmPassword"
+						/>
+					</fieldset>
+					<hr />
 
 					<button id="createAccountBtn">Create Account</button>
-
-					<h2>Already have an account? <span>Log In</span></h2>
 				</form>
+				<h2>Already have an account? <span id="logInText">Log In</span></h2>
 			</main>
 		</div>
 	</body>
