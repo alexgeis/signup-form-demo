@@ -1,7 +1,9 @@
 # signup-form-demo
 
 Clean layout for a sign-up form in vanilla CSS.
+
 [DEPLOYED LINK](https://alexgeis.github.io/signup-form-demo/) &larr;&larr;
+
 Credit to Ray Zhuang for the Unsplash photo.
 
 ![Screenshot of web form](./assets/images/screenshot-5.26.22.png)
