@@ -38,6 +38,7 @@ body {
     z-index: -1;
 }
 
+
 img.bg {
         width: 100%; 
         height: 100%;
@@ -62,26 +63,60 @@ img.bg {
 }
 
 .company-name {
-    
+    padding-right: 30px;
 }
 
-
-
+/* TEXT */
 .main {
+    flex:5;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 120px 400px 50px 50px;
+    padding: 50px;
 }
 
-#nameSet,
+h2 {
+    overflow-wrap: break-word;
+}
+
+.input-section {
+    box-shadow: 0 5px 5px 4px rgba(255, 255, 255, 0.2);
+    padding: 16px;
+}
+
+.inputs > fieldset {
+    display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 18px;
+  border: none;
+  margin-bottom: 18px;
+}
+
+.inputs label {
+    display: block;
+}
+
+input.focus {
+border: 1px solid blue;
+box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+input.error {
+border: 1px solid red;
+}
+
+
+
+/* #nameSet,
 #emailPhoneSet,
 #passwordSet {
     display:flex;
     gap: 10px;
     border: none;
-}
+} */
 
 label {
     /* display:block; */
@@ -104,4 +139,32 @@ hr {
 
 #logInText {
     color: var(--primary-color)
+}
+
+@media only screen and (max-width: 1080px) {
+    .aside {
+        flex-basis: 20%;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .wrapper {
+      flex-direction: column;
+    }
+    .aside {
+        height: 10vh;
+    }
+    img.bg {
+        height: 10vh;
+    }
+    .text-bg {
+        padding:5px;
+    }
+    .main {
+        max-width: 100vw;
+        padding: 20px;
+    }
+    h2 {
+        padding-right: 50px;
+    }
 }
